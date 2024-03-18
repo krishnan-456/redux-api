@@ -1,0 +1,54 @@
+@import "resets";
+@import "variables";
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+}
+
+.title-card{
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border: 1px solid $card-border-color;
+    border-radius: 5px;
+    padding: 30px 40px;
+    .card-desc{
+        .card-desc-price{
+            font-weight: 600;
+        }
+    }
+    .card-btn{
+        width: 100%;
+        border: none;
+        padding: 10px 20px;
+        background: #000;
+        color: white;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+    }
+}
+
+.card-image{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    .card-image-size{
+        width: 200px;
+        height: 200px;
+    }
+}
